@@ -13,3 +13,27 @@
     margin: 0;
 }
 
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: minmax(200px, 1fr) 5fr;
+    grid-template-rows: 1fr 5fr;
+    grid-template-areas: 
+    "nav header"
+    "nav main";
+}
+
+nav {
+    background-color: lightgreen;
+    grid-area: nav;
+}
+
+header {
+    background-color: lightcoral;
+    grid-area: header;
+}
+
+main {
+    background-color: lightblue;
+    grid-area: main;
+}
