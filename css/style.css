@@ -111,7 +111,7 @@ header > div {
     border: 1px solid red;
 }
 
-.searchbar {
+.header-searchbar {
     padding: 0 50px;
     
     display: grid;
@@ -120,19 +120,19 @@ header > div {
     gap: 10px;
 }
 
-.searchbar img {
+header img {
     height: 1.75rem;
 }
 
-.searchbar button {
+.header-searchbar button {
     border: none;
     background-color: transparent;
     cursor: pointer;
 }
 
-.searchbar input{
+.header-searchbar input{
     height: 30px;
-    width: 90%;
+    width: 95%;
     border-radius: 14px;
     border: none;
     background-color: var(--gray-bg);
@@ -142,8 +142,54 @@ header > div {
     color: var(--emerald-text);
 }
 
-.searchbar input:focus{
+.header-searchbar input:focus{
     outline: 3px solid var(--emerald-medium);
+}
+
+[type="search"]::-webkit-search-decoration,
+[type="search"]::-webkit-search-cancel-button {
+  appearance: none;
+}
+
+.header-searchbar input + span{
+    position: relative;
+}
+
+.header-searchbar input:focus + span button{
+    position: absolute;
+    left: -24px;
+    top: 0;
+}
+
+.header-searchbar input:focus + span button::before{
+    content: "✖";
+    color: var(--emerald-medium);
+    font-size: 1.2rem;
+}
+
+.header-icons {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.header-icons img {
+    height: 1.5rem;
+}
+
+.header-icons .profile-image {
+    background-color: #10b981;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+}
+
+.header-icons .name {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: var(--emerald-text);
 }
 
 
