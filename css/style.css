@@ -5,7 +5,6 @@
     --emerald-dark: #064e3b;
     --emerald-medium: #10b981;
     --emerald-light: #6ee7b7;
-    --emerald-white: #ecfdf5;
     --emerald-text: #022c22;
     --gray-bg: rgba(156, 160, 156, 0.384);
     --text: #52525b;
@@ -99,9 +98,10 @@ nav img {
 header {
     background-color: white;
     box-shadow: 0px 1px 5px 0 rgb(184, 183, 183);
+    color: var(--emerald-text);
+    
     grid-area: header;
     z-index: 1;
-
     display: grid;
     grid-template-columns: 3fr 2fr;
     grid-template-rows: 2fr 3fr;
@@ -112,15 +112,15 @@ header > div {
 }
 
 .header-searchbar {
-    padding: 0 50px;
+    padding-left: 50px;
     
     display: grid;
-    grid-template-columns: 50px 1fr;
     align-items: center;
-    gap: 10px;
+    grid-template-columns: auto 1fr;
+    gap: 14px;
 }
 
-header img {
+.header-searchbar img {
     height: 1.75rem;
 }
 
@@ -180,7 +180,7 @@ header img {
 }
 
 .header-icons .profile-image {
-    background-color: #10b981;
+    background-color: var(--emerald-medium);
     width: 40px;
     height: 40px;
     border-radius: 20px;
@@ -189,9 +189,33 @@ header img {
 .header-icons .name {
     font-size: 1.3rem;
     font-weight: 500;
-    color: var(--emerald-text);
 }
 
+.header-greeting {
+    padding-left: 50px;
+    font-weight: 500;
+
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 20px;
+}
+
+.header-greeting .profile-image-large {
+    background-color: var(--emerald-medium);
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+}
+
+.header-greeting .greeting .message {
+    font-size: 0.9rem;
+    margin-bottom: 0.4rem;
+}
+
+.header-greeting .greeting .account-name {
+    font-size: 1.4rem;
+}
 
 
 /* ---------------- Main -------------------- */
