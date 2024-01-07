@@ -72,6 +72,10 @@ nav .links a {
     align-items: center;
 }
 
+nav .link a:link {
+    color: white;
+}
+
 nav .links a:visited{
     color: white;
 }
