@@ -161,36 +161,17 @@ header {
     position: relative;
 }
 
-.header-searchbar input:focus + span button{
+.header-searchbar input:focus + span::before{
     position: absolute;
     left: -24px;
-    top: 0;
-    bottom: 0;
+    top: 1px;
 }
 
-.header-searchbar input:focus + span button::before{
+.header-searchbar input:focus + span::before{
     content: "✖";
     color: var(--emerald-medium);
     font-size: 1.2rem;
 }
-
-/* .header-searchbar .search span{
-    position: relative;
-}
-
-.search span button {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: -24px;
-}
-
-.search input:focus + span button::before{
-    content: "✖";
-    color: var(--emerald-medium);
-    font-size: 1.2rem;
-} */
-
 
 /* ----- Header-Icons ----- */
 
