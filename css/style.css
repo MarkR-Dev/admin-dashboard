@@ -164,13 +164,14 @@ header {
 .header-searchbar input:focus + span::before{
     position: absolute;
     left: -24px;
-    top: 1px;
+    top: 0;
 }
 
 .header-searchbar input:focus + span::before{
-    content: "✖";
+    content: "x";
     color: var(--emerald-medium);
     font-size: 1.2rem;
+    font-weight: bold;
 }
 
 /* ----- Header-Icons ----- */
