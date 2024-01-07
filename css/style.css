@@ -159,11 +159,12 @@ header {
 
 .header-searchbar input + span{
     position: relative;
+    font-family: Roboto;
 }
 
 .header-searchbar input:focus + span::before{
     position: absolute;
-    left: -24px;
+    left: -26px;
     top: 0;
 }
 
@@ -172,6 +173,10 @@ header {
     color: var(--emerald-medium);
     font-size: 1.2rem;
     font-weight: bold;
+}
+
+.header-searchbar span:hover{
+    cursor: pointer;
 }
 
 /* ----- Header-Icons ----- */
